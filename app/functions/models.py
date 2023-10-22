@@ -1,5 +1,5 @@
-from schemas.model import *
-from db.mongo import db
+from app.schemas.model import *
+from app.db.mongo import db
 from pymongo.errors import PyMongoError
 from fastapi import HTTPException, status
 

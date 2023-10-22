@@ -1,9 +1,9 @@
 from typing import List
 from fastapi import APIRouter, Depends, status, File, UploadFile
-from schemas.sign import *
-from schemas.user import CurrentUser
-from functions import sign
-from security import oauth2
+from app.schemas.sign import *
+from app.schemas.user import CurrentUser
+from app.functions import sign
+from app.security import oauth2
 
 router = APIRouter(prefix="/signs", tags=["Signs"])
 

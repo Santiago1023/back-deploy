@@ -1,9 +1,9 @@
 from fastapi import HTTPException, status
 from pymongo.errors import PyMongoError
-from schemas.user import *
-from db.mongo import db
-from security.hashing import Hash
-from functions.validations.validations import *
+from app.schemas.user import *
+from app.db.mongo import db
+from app.security.hashing import Hash
+from app.functions.validations.validations import *
 
 
 def create(request: CreateUser):

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
-from security import oauth2
-from schemas.user import *
-from functions import user
+from app.security import oauth2
+from app.schemas.user import *
+from app.functions import user
 
 router = APIRouter(prefix="/user", tags=["Users"])
 

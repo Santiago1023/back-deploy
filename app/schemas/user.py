@@ -1,7 +1,7 @@
 from typing import List, Optional
 from pydantic import BaseModel
 from datetime import datetime
-from .sign import ShowSign as Sign
+from app.schemas.sign import ShowSign as Sign
 
 
 class UserBase(BaseModel):

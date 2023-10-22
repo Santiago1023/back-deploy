@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
-from security import oauth2
-from schemas.model import *
-from functions import models
+from app.security import oauth2
+from app.schemas.model import *
+from app.functions import models
 
 from fastapi_pagination import add_pagination, paginate
 from fastapi_pagination.links import Page

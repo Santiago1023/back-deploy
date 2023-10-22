@@ -1,9 +1,9 @@
 
-from schemas.auth import Login
+from app.schemas.auth import Login
 from fastapi import status, HTTPException, Depends
-from db.mongo import db
-from security.jwt import create_access_token
-from security.hashing import Hash
+from app.db.mongo import db
+from app.security.jwt import create_access_token
+from app.security.hashing import Hash
 from datetime import datetime
 
 

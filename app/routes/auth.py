@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from fastapi.security import OAuth2PasswordRequestForm
-from functions import auth
-from schemas.auth import *
+from app.functions import auth
+from app.schemas.auth import *
 
 
 router = APIRouter(tags=["Authentication"], prefix="/auth")

@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes import auth, sign, user, models, streaming
+from app.routes import auth, sign, user, models, streaming
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()

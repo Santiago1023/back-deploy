@@ -1,9 +1,9 @@
 from bson.objectid import ObjectId
 from fastapi import HTTPException, status
-from schemas.sign import *
-from schemas.user import CurrentUser
+from app.schemas.sign import *
+from app.schemas.user import CurrentUser
 from datetime import datetime
-from db.mongo import db
+from app.db.mongo import db
 from pymongo.errors import PyMongoError
 import os
 
