@@ -1,0 +1,17 @@
+apiVersion: skaffold/v4beta7
+kind: Config
+metadata:
+  name: backendsignai
+build:
+  artifacts:
+    - image: signai-image
+      docker:
+        dockerfile: Dockerfile
+portForward:
+  - resourceType: deployment
+    resourceName: signai-image
+    port: 80
+    localPort: 8000
+manifests:
+  rawYaml:
+    - deployment.yaml
