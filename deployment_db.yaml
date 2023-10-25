@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: signai-mongo-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: singai-mongo
+  template:
+    metadata:
+      labels:
+        app: singai-mongo
+    spec:
+      containers:
+        - name: singai-mongo
+          image: mongo
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: singai-mongo-srv
+spec:
+  selector:
+    app: singai-mongo
+  ports:
+    - name: db
+      protocol: TCP
+      port: 27017
+      targetPort: 27017
