@@ -3,6 +3,8 @@ services:
   nginx:
     container_name: signai-container
     build:
-      context: .
-      dockerfile: .
+      context: ..
+      dockerfile: Dockerfile
     image: signai-container:latest
+    ports:
+      - "8000"
