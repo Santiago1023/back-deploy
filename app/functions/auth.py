@@ -31,3 +31,4 @@ def login(request: Login):
         {"email": user["email"], "role": user["role"], "idUser": user["id"]}
     )
     return {"access_token": access_token, "token_type": "bearer"}
+

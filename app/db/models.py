@@ -32,6 +32,7 @@ class Sign(Base):
     creator = relationship("User", back_populates="signs")
 
 
+
 class Log(Base):
     __tablename__ = "logs"
 
